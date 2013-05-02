@@ -1,0 +1,30 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="site">
+<head>
+    <meta charset="UTF-8">
+    <title>An AngularJS demo project</title>
+    <link rel="stylesheet" href="vendor/yui-cssreset-min-3.8.0.css">
+    <link rel="stylesheet" href="css/stellar.css">
+    <script src="vendor/underscore-min-1.4.4.js"></script>
+    <script src="vendor/jquery.min-1.9.1.js"></script>
+    <script src="vendor/angular.min-1.0.6.js"></script>
+    <script src="vendor/jquery.stellar.min.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="/static/plugin/selectivizr/selectivizr-min.js"></script><![endif]-->
+    <script src="js/stellar.directives.js"></script>
+    <script src="js/demo.js"></script>
+    <style>
+        main{
+            font-size: 72px;
+            color: red;
+        }
+    </style>
+</head>
+<body stellar-background="0.8">
+    <main ng-controller="stellarCtrl" style="height: 2000px">
+        [['jquery.stellar.min.js running']]
+    </main>
+    <div class="planet" stellar="0.8" stellar-hor="0"></div>
+    <div class="sun" stellar="1.2" stellar-vert="0"></div>
+</body>
+</html>
