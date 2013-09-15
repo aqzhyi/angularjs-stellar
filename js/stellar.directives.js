@@ -5,8 +5,8 @@ angular.module('stellar.directives', [])
             window: function() {
                 jQuery(window).stellar();
             },
-            against: function(selector) {
-                jQuery(selector).stellar();
+            against: function(selector, args) {
+                jQuery(selector).stellar(args);
             }
         }
     })
